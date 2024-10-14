@@ -1,0 +1,92 @@
+<style>
+   label {
+      display: block;
+	  width: 0;
+	  height: 0;
+	  overflow: hidden;
+   }
+</style>
+
+<form>
+  <span id="selectedElements">0 righe selezionate</span>
+  <table style="width: 100%; text-align: left">
+   <thead>
+      <th>
+	    <input type="checkbox" id="selectall" name="selectall" aria-labelledby="selectedElements" />
+		<label for="selectall">Seleziona tutte le righe</label>
+	  </th>
+	  <th>
+	    Nome
+	  </th>
+	  <th>
+	    Cognome
+	  </th>
+	  <th>
+	    Indirizzo E-Mail
+	  </th>
+   </thead>
+   <tbody>
+     <tr>
+	   <td>
+	    <input class="ckbx" type="checkbox" id="row1" name="row1" aria-labelledby="selectedElements" />
+		<label for="row1">Seleziona riga 1</label>
+	   </td>
+	   <td>Mario</td>
+	   <td>Rossi</td>
+	   <td>m.rossi@teamsystem.com</td>
+	 </tr>
+	 <tr>
+	   <td>
+	    <input class="ckbx" type="checkbox" id="row2" name="row2" aria-labelledby="selectedElements" />
+		<label for="row2">Seleziona riga 2</label>
+	   </td>
+	   <td>Marina</td>
+	   <td>Blu</td>
+	   <td>m.blu@teamsystem.com</td>
+	 </tr>
+	 <tr>
+	   <td>
+	    <input class="ckbx" type="checkbox" id="row3" name="row3" aria-labelledby="selectedElements" />
+		<label for="row3">Seleziona riga 3</label>
+	   </td>
+	   <td>Andrea</td>
+	   <td>Chirico</td>
+	   <td>a.chirico@teamsystem.com</td>
+	 </tr>
+   </tbody>
+  </table>
+</form>
+
+<script>
+
+   let selectedRows = [];
+
+   document.getElementById("selectall").addEventListener('change', event => {
+     Array.from(document.getElementsByClassName("ckbx")).forEach(el => {
+	    if(event.target.checked){
+		 selectedRows.push(el.id);
+		 el.setAttribute("checked", "true");
+		}else{
+		 el.removeAttribute("checked");
+		 selectedRows = [];
+		}  
+	 });
+	 checkOnChange();
+   });
+   
+    Array.from(document.getElementsByClassName("ckbx")).forEach(el => {
+	   el.addEventListener("change", event => {
+	      if(event.target.checked){
+		     selectedRows.push(event.target.id);
+		  }else{
+		     selectedRows.splice(selectedRows.indexOf(event.target.id),1);
+		  }
+		   checkOnChange();
+	   }); 	  
+	});
+	
+	function checkOnChange(){
+		  document.getElementById("selectedElements").textContent = selectedRows.length + " righe selezionate";
+	}
+
+</script>

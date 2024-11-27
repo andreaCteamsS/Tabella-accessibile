@@ -14,7 +14,10 @@
 		be announced by screen readers in a non-disruptive manner -->
 		<span id="selectedElements" aria-live="polite">0 righe
 			selezionate</span>
-		<table role="table">
+		<table role="table" aria-describedby="table-description">
+			<span style="display: none;" id="table-description">Rappresenta una
+				tabella contentente le utenze di teamsystem</span>
+			<caption>Utenze teamsystem</caption>
 			<thead>
 				<tr>
 					<th scope="col">
@@ -59,6 +62,11 @@
 					<td>a.chirico@teamsystem.com</td>
 				</tr>
 			</tbody>
+			<tfoot>
+				<tr>
+					<td>footer</td>
+				</tr>
+			</tfoot>
 		</table>
 	</form>
 

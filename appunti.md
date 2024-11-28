@@ -1,5 +1,6 @@
 FONTI
-- Beginner’s guide to accessible tables
+- [Beginner’s guide to accessible tables](https://blog.pope.tech/2023/08/22/beginners-guide-to-accessible-tables/)
+- [A Responsive Accessible Table](https://adrianroselli.com/2017/11/a-responsive-accessible-table.html?replytocom=87368)
 
 <br>
 <br>
@@ -20,3 +21,7 @@ Il caption  è come un heading per la table quindi si occupa di annunciare cosa 
 
 <h4>SUMMARY </h4>
 Piccola descrizione visibile o invisibile che tramite aria-describedby permette di attribuire una descrizione alla tabell
+
+
+
+CONTINUARE PARTE COLORI

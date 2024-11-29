@@ -1,6 +1,7 @@
 FONTI
 - [Beginner’s guide to accessible tables](https://blog.pope.tech/2023/08/22/beginners-guide-to-accessible-tables/)
 - [A Responsive Accessible Table](https://adrianroselli.com/2017/11/a-responsive-accessible-table.html?replytocom=87368)
+- [Html validator](https://validator.w3.org/nu/#file)
 
 <br>
 <br>
@@ -23,5 +24,7 @@ Il caption  è come un heading per la table quindi si occupa di annunciare cosa 
 Piccola descrizione visibile o invisibile che tramite aria-describedby permette di attribuire una descrizione alla tabell
 
 
+<h4>HTML VALIDATOR</h4>
+utile ma permette solo di validare la parte relativa a html aria etc
 
-CONTINUARE PARTE COLORI
+finire tabella mobile

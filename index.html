@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
+    <meta name="version" content="1">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabella Complessa</title>
@@ -58,37 +59,37 @@
         
         <!-- Intestazione principale della tabella -->
         <tr>
-            <th class="header-main" rowspan="3" colspan="2">Regioni</th>
-            <th class="header-main" colspan="12">Trimestri</th>
-            <th class="header-main" rowspan="3">Totale Annuale</th>
+            <th id="regioni" class="header-main" rowspan="3" colspan="2">Regioni</th>
+            <th id="trimestri" class="header-main" colspan="12">Trimestri</th>
+            <th id="totale-annuale" class="header-main" rowspan="3">Totale Annuale</th>
         </tr>
         
         <tr>
-            <th class="subheader" colspan="3">Primo Trimestre</th>
-            <th class="subheader" colspan="3">Secondo Trimestre</th>
-            <th class="subheader" colspan="3">Terzo Trimestre</th>
-            <th class="subheader" colspan="3">Quarto Trimestre</th>
+            <th id="primo" class="subheader" colspan="3">Primo Trimestre</th>
+            <th id="secondo" class="subheader" colspan="3">Secondo Trimestre</th>
+            <th id="terzo" class="subheader" colspan="3">Terzo Trimestre</th>
+            <th id="quarto" class="subheader" colspan="3">Quarto Trimestre</th>
         </tr>
         
         <tr>
-            <th>Gen</th>
-            <th>Feb</th>
-            <th>Mar</th>
-            <th>Apr</th>
-            <th>Mag</th>
-            <th>Giu</th>
-            <th>Lug</th>
-            <th>Ago</th>
-            <th>Set</th>
-            <th>Ott</th>
-            <th>Nov</th>
-            <th>Dic</th>
+            <th id="gen">Gen</th>
+            <th id="feb">Feb</th>
+            <th id="mar">Mar</th>
+            <th id="apr">Apr</th>
+            <th id="mag">Mag</th>
+            <th id="giu">Giu</th>
+            <th id="lug">Lug</th>
+            <th id="ago">Ago</th>
+            <th id="set">Set</th>
+            <th id="ott">Ott</th>
+            <th id="nov">Nov</th>
+            <th id="dic">Dic</th>
         </tr>
         
         <!-- Nord -->
         <tr>
-            <th class="header-col" rowspan="4">Nord</th>
-            <td class="header-row">Piemonte</td>
+            <th id="nord" class="header-col" rowspan="4">Nord</th>
+            <th id="piemonte" class="header-row">Piemonte</th>
             <td>€23,450</td>
             <td>€27,890</td>
             <td>€31,250</td>
@@ -104,7 +105,7 @@
             <td class="totale">€447,980</td>
         </tr>
         <tr>
-            <td class="header-row">Lombardia</td>
+            <th class="header-row">Lombardia</th>
             <td>€45,670</td>
             <td>€48,230</td>
             <td>€52,180</td>
@@ -120,7 +121,7 @@
             <td class="totale">€733,700</td>
         </tr>
         <tr>
-            <td class="header-row">Veneto</td>
+            <th class="header-row">Veneto</th>
             <td>€32,450</td>
             <td>€35,670</td>
             <td>€38,920</td>
@@ -136,7 +137,7 @@
             <td class="totale">€529,380</td>
         </tr>
         <tr class="totale">
-            <td>Totale Nord</td>
+            <th>Totale Nord</th>
             <td>€101,570</td>
             <td>€111,790</td>
             <td>€122,350</td>
@@ -154,8 +155,8 @@
         
         <!-- Centro -->
         <tr>
-            <th class="header-col" rowspan="4">Centro</th>
-            <td class="header-row">Toscana</td>
+            <th id="centro" class="header-col" rowspan="4">Centro</th>
+            <th class="header-row">Toscana</th>
             <td>€22,340</td>
             <td>€25,670</td>
             <td>€28,930</td>
@@ -187,7 +188,7 @@
             <td class="totale">€634,280</td>
         </tr>
         <tr>
-            <td class="header-row">Umbria</td>
+            <th class="header-row">Umbria</th>
             <td>€15,230</td>
             <td>€17,890</td>
             <td>€19,350</td>
@@ -203,7 +204,7 @@
             <td class="totale">€281,750</td>
         </tr>
         <tr class="totale">
-            <td>Totale Centro</td>
+            <th>Totale Centro</th>
             <td>€76,330</td>
             <td>€85,690</td>
             <td>€94,170</td>
@@ -221,8 +222,8 @@
         
         <!-- Sud -->
         <tr>
-            <th class="header-col" rowspan="4">Sud</th>
-            <td class="header-row">Campania</td>
+            <th id="Sud" class="header-col" rowspan="4">Sud</th>
+            <th class="header-row">Campania</th>
             <td>€19,870</td>
             <td>€22,450</td>
             <td>€25,670</td>
@@ -238,7 +239,7 @@
             <td class="totale">€365,660</td>
         </tr>
         <tr>
-            <td class="header-row">Puglia</td>
+            <th class="header-row">Puglia</th>
             <td>€17,450</td>
             <td>€19,230</td>
             <td>€21,560</td>
@@ -254,7 +255,7 @@
             <td class="totale">€313,810</td>
         </tr>
         <tr>
-            <td class="header-row">Sicilia</td>
+            <th class="header-row">Sicilia</th>
             <td>€18,230</td>
             <td>€20,560</td>
             <td>€23,450</td>
@@ -270,7 +271,7 @@
             <td class="totale">€340,290</td>
         </tr>
         <tr class="totale">
-            <td>Totale Sud</td>
+            <th>Totale Sud</th>
             <td>€55,550</td>
             <td>€62,240</td>
             <td>€70,680</td>
@@ -288,7 +289,7 @@
         
         <!-- Totale complessivo -->
         <tr class="totale">
-            <th colspan="2">Totale Nazionale</th>
+            <th id="totale-nazinale" colspan="2">Totale Nazionale</th>
             <td>€233,450</td>
             <td>€259,720</td>
             <td>€287,200</td>

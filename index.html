@@ -13,17 +13,9 @@
     <table>
         <caption>Dati di Vendita per Regione e Trimestre - Anno 2024</caption>
 
-        <!-- Intestazione principale della tabella -->
         <tr>
-            <th id="regioni" class="header-main" rowspan="3" colspan="2"
-                scope="colgroup">Regioni</th>
-            <th id="trimestri" class="header-main" colspan="12"
-                scope="colgroup">Trimestri</th>
-            <th id="totale-annuale" class="header-main" rowspan="3" scope="col">
-                Totale Annuale</th>
-        </tr>
+            <th rowspan="2" colspan="2" scope="colgroup"></th>
 
-        <tr>
             <th id="primo" class="subheader" colspan="3" scope="colgroup">Primo
                 Trimestre</th>
             <th id="secondo" class="subheader" colspan="3" scope="colgroup">
@@ -32,6 +24,9 @@
                 Trimestre</th>
             <th id="quarto" class="subheader" colspan="3" scope="colgroup">
                 Quarto Trimestre</th>
+
+            <th colspan="2" scope="colgroup"></th>
+
         </tr>
 
         <tr>
@@ -47,11 +42,13 @@
             <th id="ott" scope="col">Ottobre</th>
             <th id="nov" scope="col">Novembre</th>
             <th id="dic" scope="col">Dicembre</th>
+            <th id="totale-annuale" scope="col">
+                Totale Annuale</th>
         </tr>
 
         <!-- Nord -->
         <tr>
-            <th id="nord" class="header-col" rowspan="4" scope="rowgroup">Nord
+            <th id="nord" class="header-col" rowspan="3" scope="rowgroup">Nord
             </th>
             <th id="piemonte" class="header-row" scope="row">Piemonte</th>
             <td>€23.450</td>
@@ -101,7 +98,8 @@
             <td class="totale">€529.380</td>
         </tr>
         <tr class="totale" scope="row">
-            <th scope="row">Totale Nord</th>
+            <th scope="row" colspan="2" class="header-row-total">Totale Nord
+            </th>
             <td>€101.570</td>
             <td>€111.790</td>
             <td>€122.350</td>
@@ -119,7 +117,7 @@
 
         <!-- Centro -->
         <tr>
-            <th id="centro" class="header-col" rowspan="4" scope="rowgroup">
+            <th id="centro" class="header-col" rowspan="3" scope="rowgroup">
                 Centro</th>
             <th class="header-row" scope="row">Toscana</th>
             <td>€22.340</td>
@@ -169,7 +167,8 @@
             <td class="totale">€281.750</td>
         </tr>
         <tr class="totale">
-            <th scope="row">Totale Centro</th>
+            <th scope="row" colspan="2" class="header-row-total">Totale Centro
+            </th>
             <td>€76.330</td>
             <td>€85.690</td>
             <td>€94.170</td>
@@ -187,7 +186,7 @@
 
         <!-- Sud -->
         <tr>
-            <th id="Sud" class="header-col" rowspan="4" scope="rowgroup">Sud
+            <th id="Sud" class="header-col" rowspan="3" scope="rowgroup">Sud
             </th>
             <th class="header-row" scope="row">Campania</th>
             <td>€19.870</td>
@@ -237,7 +236,7 @@
             <td class="totale">€340.290</td>
         </tr>
         <tr class="totale">
-            <th scope="row">Totale Sud</th>
+            <th scope="row" colspan="2" class="header-row-total">Totale Sud</th>
             <td>€55.550</td>
             <td>€62.240</td>
             <td>€70.680</td>
@@ -255,7 +254,8 @@
 
         <!-- Totale complessivo -->
         <tr class="totale">
-            <th id="totale-nazinale" colspan="2" scope="row">Totale Nazionale
+            <th id="totale-nazinale" colspan="2" class="header-row-total"
+                scope="row">Totale Nazionale
             </th>
             <td>€233.450</td>
             <td>€259.720</td>

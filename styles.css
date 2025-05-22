@@ -52,3 +52,42 @@ caption {
     margin-bottom: 10px;
     text-align: center;
 }
+
+.table-container {
+    max-height: 400px;
+    overflow-y: auto;
+    position: relative;
+}
+
+.table-container table {
+    position: relative;
+}
+
+tr.totale {
+    /* position: sticky; */
+    /* bottom: 0; */
+    background-color: #ffffcc;
+    /* z-index: 2; */
+}
+/* 
+tr.trimestri {
+    position: sticky;
+    z-index: 2;
+
+}
+
+tr.mesi {
+    position: sticky;
+    z-index: 2;
+
+} */
+
+
+thead, tfoot {
+    position: sticky;
+    z-index: 2;
+}
+
+thead {top: 0;}
+
+tfoot {bottom: 0;}

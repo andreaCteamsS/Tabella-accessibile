@@ -1,3 +1,7 @@
+*:focus {
+    outline:5px red !important;
+}
+
 /* Reset and base styles */
 html, body {
     margin: 0;
